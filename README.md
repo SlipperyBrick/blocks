@@ -1,4 +1,4 @@
-![blocks-logo](blocks-preprocessor/src/assets/blocks-logo.png)
+![blocks-logo](src/assets/blocks-logo.png)
 
 # Blocks Preprocessor
 
