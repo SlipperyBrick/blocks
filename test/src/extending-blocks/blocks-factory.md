@@ -1,0 +1,1 @@
+Give the reader a brief introduction to design patterns, discuss the factory design pattern and why it was used to implement components for the blocks preprocessor.

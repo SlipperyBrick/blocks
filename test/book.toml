@@ -1,0 +1,11 @@
+[book]
+authors = []
+language = "en"
+multilingual = false
+src = "src"
+
+[preprocessor.test]
+command = "node testPreprocessor.js"
+
+[output.html]
+no-section-label = true
