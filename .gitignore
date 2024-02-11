@@ -22,7 +22,7 @@ node_modules
 
 out
 dist
-resources
+/resources
 
 # C extensions
 *.so

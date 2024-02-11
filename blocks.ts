@@ -3,6 +3,8 @@ import { stdin } from "process";
 
 import MarkdownIt from "markdown-it";
 
+import blocks from "./mdbook-blocks/rules/configureMarkdownIt";
+
 import {
   Chapter,
   Book,
@@ -10,30 +12,27 @@ import {
 } from "./mdbook-blocks/types/types";
 
 const md = new MarkdownIt();
+md.use(blocks);
 
 const processChapters = (chapter: Chapter): void => {
-  // Here you might process the chapter content with MarkdownIt, for example
   chapter.content = md.render(chapter.content);
-  chapter.subItems.forEach((subItem) => {
-    if (subItem.Chapter) {
-      processChapters(subItem.Chapter);
-    }
-  });
+
+  if (Array.isArray(chapter.subItems)) {
+    chapter.subItems.forEach((subItem) => {
+      if (subItem.Chapter) {
+        processChapters(subItem.Chapter);
+      }
+    });
+  }
 };
 
 const processBook = (book: Book): void => {
-  console.log("Received book data:", JSON.stringify(book, null, 2));
-
   if (Array.isArray(book.sections)) {
     book.sections.forEach((section) => {
       if (section.Chapter) {
         processChapters(section.Chapter);
       }
     });
-  } else {
-    console.error(
-      "Error: 'sections' is not an array or is undefined in the book object"
-    );
   }
 };
 
@@ -45,10 +44,12 @@ switch (args[0]) {
 
   case "test":
     const testData = readFileSync(args[1], "utf8");
-    const [, testBook] = JSON.parse(testData) as [PreprocessorContext, Book];
-    processBook(testBook);
+    const [context, book] = JSON.parse(testData) as [PreprocessorContext, Book];
+    processBook(book);
 
-    console.log(JSON.stringify(testBook));
+    const output = JSON.stringify([context, book], null, 2);
+
+    console.log(output);
 
     break;
 
@@ -58,20 +59,16 @@ switch (args[0]) {
     stdin.on("data", (chunk) => (inputData += chunk));
     stdin.on("end", () => {
       try {
-        const parsedData = JSON.parse(inputData);
+        const [_context, book] = JSON.parse(inputData) as [
+          PreprocessorContext,
+          Book
+        ];
 
-        if (
-          Array.isArray(parsedData) &&
-          parsedData.length >= 2 &&
-          parsedData[1].hasOwnProperty("sections")
-        ) {
-          const [context, book] = parsedData as [PreprocessorContext, Book];
-          processBook(book);
+        processBook(book);
 
-          console.log(JSON.stringify([context, book]));
-        } else {
-          throw new Error("Input data structure is not as expected.");
-        }
+        const output = JSON.stringify(book);
+
+        console.log(output);
       } catch (error) {
         console.error(`Error processing input: ${error}`);
         process.exit(1);
