@@ -1,36 +1,82 @@
-import * as fs from "fs";
+import { readFileSync } from "fs";
+import { stdin } from "process";
 
-// Check if the first command-line argument is "supports"
-if (process.argv[2] === "supports") {
-  // Log the arguments during the "supports" check
-  console.log("Arguments during supports check:", process.argv.slice(2));
+import MarkdownIt from "markdown-it";
 
-  // Exit with a status code of 0 to indicate support
-  process.exit(0);
-}
+import {
+  Chapter,
+  Book,
+  PreprocessorContext,
+} from "./mdbook-blocks/types/types";
 
-// Check if the necessary command-line arguments are provided
-if (process.argv.length < 3 || !process.argv[2]) {
-  console.error("Usage: node script.ts supports <jsonFilePath>");
-  process.exit(1);
-}
+const md = new MarkdownIt();
 
-// Read the JSON file
-const jsonFilePath = process.argv[2];
-fs.readFile(jsonFilePath, "utf-8", (err, data) => {
-  if (err) {
-    console.error(`Error reading JSON file: ${err.message}`);
-    process.exit(1);
+const processChapters = (chapter: Chapter): void => {
+  // Here you might process the chapter content with MarkdownIt, for example
+  chapter.content = md.render(chapter.content);
+  chapter.subItems.forEach((subItem) => {
+    if (subItem.Chapter) {
+      processChapters(subItem.Chapter);
+    }
+  });
+};
+
+const processBook = (book: Book): void => {
+  console.log("Received book data:", JSON.stringify(book, null, 2));
+
+  if (Array.isArray(book.sections)) {
+    book.sections.forEach((section) => {
+      if (section.Chapter) {
+        processChapters(section.Chapter);
+      }
+    });
+  } else {
+    console.error(
+      "Error: 'sections' is not an array or is undefined in the book object"
+    );
   }
+};
 
-  try {
-    // Parse the JSON input
-    const [_context, book] = JSON.parse(data);
+const args = process.argv.slice(2);
 
-    // Preprocessing logic starts here
-    console.log("Parsed JSON:", _context, book);
-  } catch (error) {
-    console.error(`Error parsing JSON input: ${(error as Error).message}`);
-    process.exit(1);
-  }
-});
+switch (args[0]) {
+  case "supports":
+    process.exit(0);
+
+  case "test":
+    const testData = readFileSync(args[1], "utf8");
+    const [, testBook] = JSON.parse(testData) as [PreprocessorContext, Book];
+    processBook(testBook);
+
+    console.log(JSON.stringify(testBook));
+
+    break;
+
+  default:
+    let inputData = "";
+
+    stdin.on("data", (chunk) => (inputData += chunk));
+    stdin.on("end", () => {
+      try {
+        const parsedData = JSON.parse(inputData);
+
+        if (
+          Array.isArray(parsedData) &&
+          parsedData.length >= 2 &&
+          parsedData[1].hasOwnProperty("sections")
+        ) {
+          const [context, book] = parsedData as [PreprocessorContext, Book];
+          processBook(book);
+
+          console.log(JSON.stringify([context, book]));
+        } else {
+          throw new Error("Input data structure is not as expected.");
+        }
+      } catch (error) {
+        console.error(`Error processing input: ${error}`);
+        process.exit(1);
+      }
+    });
+
+    break;
+}

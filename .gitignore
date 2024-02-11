@@ -20,8 +20,9 @@ tsconfig.lsif.json
 # node
 node_modules
 
-# mdbook
-book/
+out
+dist
+resources
 
 # C extensions
 *.so
