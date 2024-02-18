@@ -20,10 +20,6 @@ export const containerRenderers: { [key: string]: ContainerRenderer } = {
     `<div class="row"><div class="d-flex justify-content-around flex-grow-1 flex-wrap">${renderComponents(
       components
     )}</div></div>`,
-  container: (components) =>
-    `<div class="row"><div class="d-flex justify-content-around flex-grow-1 flex-wrap">${renderComponents(
-      components
-    )}</div></div>`,
 };
 
 // Blocks component library
