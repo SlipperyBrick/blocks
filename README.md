@@ -1,7 +1,5 @@
 ![Blocks Logo](src/assets/blocks-logo.png)
 
-# mdbook Preprocessor for Bootstrap Components
-
 Blocks is an open-source preprocessor for mdbook aimed at integrating Bootstrap components into your mdbook projects. It introduces a custom markdown syntax to include Blocks-specific tags which are converted into Bootstrap-compliant HTML components during the mdbook build process.
 
 ![Blocks Transformation Example](https://github.com/SlipperyBrick/Blocks/assets/36016443/667e7f71-fee1-4c85-b83a-afa3b8426469)
@@ -29,15 +27,13 @@ link: "components/cards.md"
 [/blocks-card]
 ```
 
-![image](https://github.com/SlipperyBrick/Blocks/assets/36016443/060cb347-800d-405f-852a-dc61bf334bde)
-
 Components are specified using `tags` for the Bootstrap element and `attributes` for the component's content and settings. Blocks also supports standard markdown within these attributes for enriched text capabilities.
 
 For a detailed list of available components, see the [Blocks Component Library]().
 
 ## Visual Studio Code Extension
 
-The Blocks Visual Studio Code extension provides a live preview feature, making it easier to visualize how your markdown will look once transformed into Bootstrap components.
+The [Blocks Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=SlipperyBrick.blockspreviewer) provides a live preview feature, making it easier to visualize how your markdown will look once transformed into Bootstrap components.
 
 ![gif](https://xbackbone.davidrjames.co.uk/vAbO4/jAdELoSo68.gif/raw)
 
@@ -52,9 +48,9 @@ To begin using Blocks with your mdbook projects follow our quick start setup ins
 
 ### Step 2: Install mdbook CLI
 
-Option1: GitHub Binaries
+Option 1: GitHub Binaries
 
-- Go to [mdBook Releases](https://github.com/rust-lang/mdBook/releases) On GitHub.
+- Go to [mdBook Releases](https://github.com/rust-lang/mdBook/releases) on GitHub.
 - Download the latest release for your OS.
 - Extract the binary to a location and add to your PATH.
 
