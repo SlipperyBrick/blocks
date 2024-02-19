@@ -1,24 +1,91 @@
-![blocks-logo](src/assets/blocks-logo.png)
+![Blocks Logo](src/assets/blocks-logo.png)
 
-# Blocks Preprocessor
+# mdbook Preprocessor for Bootstrap Components
 
-Blocks is a preprocessor for mdbook.
+Blocks is an open-source preprocessor for mdbook aimed at integrating Bootstrap components into your mdbook projects. It introduces a custom markdown syntax to include Blocks-specific tags which are converted into Bootstrap-compliant HTML components during the mdbook build process.
 
-The goal of Blocks is to extend traditional markdown syntax to provide users the ability to render components from the Bootstrap web framework into their books.
+![Blocks Transformation Example](https://github.com/SlipperyBrick/Blocks/assets/36016443/667e7f71-fee1-4c85-b83a-afa3b8426469)
 
-Blocks does this by hooking into the mdbook build process to parse a book structure, replacing all Blocks custom markdown syntax with beautiful Bootstrap components.
+## Features
 
-![blocks-demo](blocks-preprocessor/src/assets/blocks-demo.png)
+- **Custom Markdown Syntax:** Allows the embedding of Bootstrap components using a simple, readable syntax.
+- **Integration with mdbook:** Designed to operate seamlessly within the mdbook ecosystem.
+- **Modular Design:** Supports the easy addition of new Bootstrap components into the Blocks components library
+- **Developer Tools:** Includes a Visual Studio Code extension for live markdown previewing.
 
-The Blocks back-end employs a factory design pattern for constructing the HTML that makes the Bootstrap components, known as the Blocks Factory. The Blocks Factory is easily extendable, allowing users to add new components to Blocks.
+## Using Blocks
 
-Blocks consists of documentation for any users interested in extending, or contributing to Blocks.
+The Blocks custom markdown syntax is designed to easily incorporate Bootstrap components into mdbook projects. It builds on standard markdown syntax with additional features for declaring components.
 
-The documentation covers:
+To use Blocks, simply wrap your Bootstrap component declarations within `[blocks-<component>]` tags in your markdown files:
 
-- Design of the Blocks custom markdown syntax
-- How the Blocks Factory works
-- Extending the Blocks Factory
-- How the Blocks parser works
+```markdown
+[blocks-card]
+title: "Greetings!"
+caption: "This is an example of a Blocks card component."
+image: "./assets/blocks-watermark.png"
+button: "Learn More"
+link: "components/cards.md"
+[/blocks-card]
+```
 
-and more!
+![image](https://github.com/SlipperyBrick/Blocks/assets/36016443/060cb347-800d-405f-852a-dc61bf334bde)
+
+Components are specified using `tags` for the Bootstrap element and `attributes` for the component's content and settings. Blocks also supports standard markdown within these attributes for enriched text capabilities.
+
+For a detailed list of available components, see the [Blocks Component Library]().
+
+## Visual Studio Code Extension
+
+The Blocks Visual Studio Code extension provides a live preview feature, making it easier to visualize how your markdown will look once transformed into Bootstrap components.
+
+![gif](https://xbackbone.davidrjames.co.uk/vAbO4/jAdELoSo68.gif/raw)
+
+## Getting Started
+
+To begin using Blocks with your mdbook projects follow our quick start setup instructions below:
+
+### Step 1: Install NodeJS
+
+- **Windows and Mac:** Download from the [NodeJS official website](https://nodejs.org/en), we recommend opting for the LTS version.
+- **Linux:** Use nvm installation to manage multiple NodeJS versions easily. See nvm [installation guide](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/).
+
+### Step 2: Install mdbook CLI
+
+Option1: GitHub Binaries
+
+- Go to [mdBook Releases](https://github.com/rust-lang/mdBook/releases) On GitHub.
+- Download the latest release for your OS.
+- Extract the binary to a location and add to your PATH.
+
+Option 2: Cargo Installation (requires Rust)
+
+- Install Rust and cargo from the [official Rust site](https://www.rust-lang.org/).
+- Run `cargo install mdbook` in the terminal.
+
+### Step 3: Setup your mdbook Project
+
+1. **Initialize npm Project:** Navigate to your project root and execute `npm init`.
+2. **Install Blocks:** Run `npm install blocks-preprocessor`.
+
+### Step 4: Configure mdbook for Blocks
+
+1. **Initialize mdbook project:** Run `mdbook init` and follow the instructions.
+2. Edit your `book.toml` to include the Blocks preprocessor and Bootstrap resources:
+
+```
+[preprocessor.blocks]
+command = "node node_modules/blocks-preprocessor/dist/blocks.js"
+
+[output.html]
+additional-css = ["node_modules/blocks-preprocessor/dist/mdbook-blocks/resources/bootstrap/scss/bootstrap.css", "node_modules/blocks-preprocessor/dist/mdbook-blocks/resources/blocks/scss/blocks.css"]
+additional-js = ["node_modules/blocks-preprocessor/dist/mdbook-blocks/resources/bootstrap/js/bootstrap.js"]
+```
+
+### Step 5: Begin Using Blocks
+
+With your environment setup, you can start incorporating Bootstrap components into your mdbook content using the Blocks' markdown syntax.
+
+## Useful Resources:
+
+- [mdbook documentation](https://rust-lang.github.io/mdBook/index.html)
