@@ -1,4 +1,6 @@
-![Blocks Logo](src/assets/blocks-logo.png)
+![Blocks Logo](https://xbackbone.davidrjames.co.uk/vAbO4/jaGoKACE92.png/raw)
+
+# Blocks: mdBook Preprocessor for Bootstrap Components
 
 Blocks is an open-source preprocessor for mdbook aimed at integrating Bootstrap components into your mdbook projects. It introduces a custom markdown syntax to include Blocks-specific tags which are converted into Bootstrap-compliant HTML components during the mdbook build process.
 

@@ -1,6 +1,6 @@
 {
   "name": "blocks-preprocessor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An mdbook preprocessor that converts Blocks-based markdown into beautiful Bootstrap components for your mdbook site",
   "main": "blocks.js",
   "files": [
