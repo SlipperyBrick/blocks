@@ -139,14 +139,37 @@
                         <h1 id="cards"><a class="header" href="#cards">Cards</a></h1>
 <p>Behold the awe-inspiring power of the card! An unrivaled vessel for your content, the card is a flexible and adaptable container that is sure to capture your audience's attention. With options for customization, you can easily tailor your card to suit your needs to bring forward your vision.</p>
 <h2 id="attributes"><a class="header" href="#attributes">Attributes</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
-<tr><td>title</td><td>A content string wrapped in double-quotes</td></tr>
-<tr><td>caption</td><td>A content string wrapped in double-quotes</td></tr>
-<tr><td>image</td><td>A path to an image wrapped in double-quotes</td></tr>
-<tr><td>button</td><td>A caption string wrapped in double-quotes</td></tr>
-<tr><td>link</td><td>A path to a markdown file wrapped in double-quotes</td></tr>
-</tbody></table>
-</div></br>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>A content string wrapped in double-quotes</td>
+</tr>
+<tr>
+<td>caption</td>
+<td>A content string wrapped in double-quotes</td>
+</tr>
+<tr>
+<td>image</td>
+<td>A path to an image wrapped in double-quotes</td>
+</tr>
+<tr>
+<td>button</td>
+<td>A caption string wrapped in double-quotes</td>
+</tr>
+<tr>
+<td>link</td>
+<td>A path to a markdown file wrapped in double-quotes</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;/br&gt;</p>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <pre><code class="language-markdown">[blocks-card]
 title: &quot;A Card&quot;
@@ -156,16 +179,9 @@ button: &quot;Take me there!&quot;
 link: &quot;../welcome.md&quot;
 [/blocks-card]
 </code></pre>
-</br>
+<p>&lt;/br&gt;</p>
 <h3 id="output"><a class="header" href="#output">Output</a></h3>
-<p>[blocks-card]
-title: &quot;A Card&quot;
-caption: &quot;Here is a beautiful card to transport you to the Welcome page&quot;
-image: &quot;../assets/blocks-watermark.png&quot;
-button: &quot;Take me there!&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-card]</p>
-<p>The card offers a myriad of potential display options that enable you to present your content in distinctive and captivating ways. Whether you choose to stack your cards or utilize the <a href="rows.html">row</a> or <a href="containers.html">container</a> layout components, the possibilities for creative expression are limitless. You have complete freedom to experiment with various layouts to make your content stand out and leave a lasting impression on your audience.</p>
+<div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">A Card</p><p class="card-text mb-5">Here is a beautiful card to transport you to the Welcome page</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">Take me there!</button></a></div></div></div><p>The card offers a myriad of potential display options that enable you to present your content in distinctive and captivating ways. Whether you choose to stack your cards or utilize the <a href="rows.html">row</a> or <a href="containers.html">container</a> layout components, the possibilities for creative expression are limitless. You have complete freedom to experiment with various layouts to make your content stand out and leave a lasting impression on your audience.</p>
 <h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
 <pre><code class="language-markdown">[blocks-row]
 [blocks-card]
@@ -198,39 +214,9 @@ link: &quot;../welcome.md&quot;
 [/blocks-card]
 [/blocks-row]
 </code></pre>
-</br>
+<p>&lt;/br&gt;</p>
 <h3 id="output-1"><a class="header" href="#output-1">Output</a></h3>
-<p>[blocks-row]
-[blocks-card]
-title: &quot;Card 1&quot;
-caption: &quot;I am card 1&quot;
-image: &quot;../assets/blocks-watermark.png&quot;
-button: &quot;See More&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-card]
-[blocks-card]
-title: &quot;Card 2&quot;
-caption: &quot;I am card 2&quot;
-image: &quot;../assets/blocks-watermark.png&quot;
-button: &quot;See More&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-card]
-[blocks-card]
-title: &quot;Card 3&quot;
-caption: &quot;I am card 3 and I have more content than the other cards&quot;
-image: &quot;../assets/blocks-watermark.png&quot;
-button: &quot;See More&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-card]
-[blocks-card]
-title: &quot;Card 4&quot;
-caption: &quot;I am card 4&quot;
-image: &quot;../assets/blocks-watermark.png&quot;
-button: &quot;See More&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-card]
-[/blocks-row]</p>
-
+<div class="row"><div class="d-flex justify-content-around flex-grow-1 flex-wrap"><div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 1</p><p class="card-text mb-5">I am card 1</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 2</p><p class="card-text mb-5">I am card 2</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 3</p><p class="card-text mb-5">I am card 3 and I have more content than the other cards</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 4</p><p class="card-text mb-5">I am card 4</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div></div></div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

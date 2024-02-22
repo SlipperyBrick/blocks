@@ -139,24 +139,34 @@
                         <h1 id="buttons"><a class="header" href="#buttons">Buttons</a></h1>
 <p>Prepare to unleash the power of buttons on your webpage! With their ability to guide users and provide easy access to other areas of content, buttons are an essential tool for creating a seamless and intuitive user experience.</p>
 <h2 id="attributes"><a class="header" href="#attributes">Attributes</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
-<tr><td>content</td><td>A content string wrapped in double-quotes</td></tr>
-<tr><td>link</td><td>A path to a markdown file wrapped in double-quotes</td></tr>
-</tbody></table>
-</div></br>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>content</td>
+<td>A content string wrapped in double-quotes</td>
+</tr>
+<tr>
+<td>link</td>
+<td>A path to a markdown file wrapped in double-quotes</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;/br&gt;</p>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <pre><code class="language-markdown">[blocks-button]
 content: &quot;Go Somewhere&quot;
 link: &quot;../welcome.md&quot;
 [/blocks-button]
 </code></pre>
-</br>
+<p>&lt;/br&gt;</p>
 <h3 id="output"><a class="header" href="#output">Output</a></h3>
-<p>[blocks-button]
-content: &quot;Go Somewhere&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-button]</p>
-</br>
+<a href="../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Go Somewhere</button></a><p>&lt;/br&gt;</p>
 <p>Up to seven buttons can be perfectly aligned by wrapping a <a href="rows.html">row</a> component around them.</p>
 <h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
 <pre><code class="language-markdown">[blocks-row]
@@ -190,39 +200,9 @@ link: &quot;../welcome.md&quot;
 [/blocks-button]
 [/blocks-row]
 </code></pre>
-</br>
+<p>&lt;/br&gt;</p>
 <h3 id="output-1"><a class="header" href="#output-1">Output</a></h3>
-<p>[blocks-row]
-[blocks-button]
-content: &quot;Button 1&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-button]
-[blocks-button]
-content: &quot;Button 2&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-button]
-[blocks-button]
-content: &quot;Button 3&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-button]
-[blocks-button]
-content: &quot;Button 4&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-button]
-[blocks-button]
-content: &quot;Button 5&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-button]
-[blocks-button]
-content: &quot;Button 6&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-button]
-[blocks-button]
-content: &quot;Button 7&quot;
-link: &quot;../welcome.md&quot;
-[/blocks-button]
-[/blocks-row]</p>
-
+<div class="row"><div class="d-flex justify-content-around flex-grow-1 flex-wrap"><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 1</button></a> <a href="../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 2</button></a> <a href="../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 3</button></a> <a href="../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 4</button></a> <a href="../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 5</button></a> <a href="../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 6</button></a> <a href="../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 7</button></a></div></div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

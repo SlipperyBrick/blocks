@@ -139,11 +139,24 @@
                         <h1 id="alerts"><a class="header" href="#alerts">Alerts</a></h1>
 <p>Alerts are a versatile tool that can captivate your audience's attention while efficiently delivering essential messages. Whether you want to celebrate achievements or provide critical warnings, alerts empower you to communicate with impact in a sleek and stylish manner.</p>
 <h2 id="attributes"><a class="header" href="#attributes">Attributes</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
-<tr><td>content</td><td>Enclose the message you wish to display within double quotes</td></tr>
-<tr><td>icon</td><td>Optionally, include a FontAwesome icon within double quotes to enhance visual context.</td></tr>
-</tbody></table>
-</div>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>content</td>
+<td>Enclose the message you wish to display within double quotes</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>Optionally, include a FontAwesome icon within double quotes to enhance visual context.</td>
+</tr>
+</tbody>
+</table>
 <p>Refer to the <a href="https://fontawesome.com/v4/cheatsheet/">FontAwesome icon cheatsheet</a> for a selection of available icons</p>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <p>Explore an example showcasing a straightfoward alert with both an icon and a message:</p>
@@ -154,11 +167,7 @@ content: &quot;A simple alert&quot;
 </code></pre>
 <h3 id="output"><a class="header" href="#output">Output</a></h3>
 <p>The example above renders as:</p>
-<p>[blocks-alert]
-icon: &quot;fa-info-circle&quot;
-content: &quot;A simple alert&quot;
-[/blocks-alert]</p>
-<p>The &quot;fa-info-circle&quot; icon from FontAwesome is utilized in this case to denote an informational message.</p>
+<div class="alert alert-primary my-4 w-100" role="alert"><div class="mr-2 fa fa-info-circle"></div>A simple alert</div><p>The &quot;fa-info-circle&quot; icon from FontAwesome is utilized in this case to denote an informational message.</p>
 <p>Feel free to experiment with various icons and messages to tailor your alerts to your content's context.</p>
 <p>Remember to consistently use double quotes and maintain proper indentation for polished syntax.</p>
 

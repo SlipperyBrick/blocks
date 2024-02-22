@@ -13,6 +13,6 @@
   "author": "David James",
   "license": "ISC",
   "dependencies": {
-    "blocks-preprocessor": "^0.0.4"
+    "blocks-preprocessor": "^0.0.7"
   }
 }
