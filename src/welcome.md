@@ -13,6 +13,14 @@ Elements which are created with Blocks are constructed into Bootstrap components
 
 Whether you are using mdbook for creating a blogging site, technical documentation, a personal portfolio, or even a complete website solution, Blocks gives you the ability to continue writing your book pages in markdown whilst adding modern looking components straight from the Bootstrap framework.
 
+[blocks-card]
+title: "Hi!"
+caption: "Keep your content looking fresh."
+image: "./assets/blocks-watermark.png"
+button: "Alerts"
+link: "components/alerts.md"
+[/blocks-card]
+
 [blocks-row]
 [blocks-card]
 title: "Hi!"
