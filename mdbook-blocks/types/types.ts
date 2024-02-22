@@ -2,7 +2,7 @@ export interface Chapter {
   name: string;
   content: string;
   number: number[] | null;
-  subItems: SubItem[];
+  sub_items: SubItem[];
   path: string;
   sourcePath: string;
   parentNames: string[];

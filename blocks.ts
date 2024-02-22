@@ -17,10 +17,10 @@ md.use(blocks);
 const processChapters = (chapter: Chapter): void => {
   chapter.content = md.render(chapter.content);
 
-  if (Array.isArray(chapter.subItems)) {
-    chapter.subItems.forEach((subItem) => {
-      if (subItem.Chapter) {
-        processChapters(subItem.Chapter);
+  if (Array.isArray(chapter.sub_items)) {
+    chapter.sub_items.forEach((sub_item) => {
+      if (sub_item.Chapter) {
+        processChapters(sub_item.Chapter);
       }
     });
   }

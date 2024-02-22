@@ -13,10 +13,16 @@
 
 # Components
 
-- [Alerts](components/alerts.md)
-- [Badges](components/badges.md)
-- [Buttons](components/buttons.md)
-- [Cards](components/cards.md)
+- [Components](components/components-introduction.md)
+
+  - [Alerts](components/alerts.md)
+  - [Badges](components/badges.md)
+  - [Buttons](components/buttons.md)
+  - [Cards](components/cards.md)
+
+- [Containers](containers/containers-introduction.md)
+  - [Rows](containers/rows.md)
+  - [Containers](containers/containers.md)
 
 # Extending Blocks
 
