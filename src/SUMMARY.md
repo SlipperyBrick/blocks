@@ -11,7 +11,7 @@
 
 - [Blocks Markdown](reference-guide/blocks-markdown.md)
 
-# Components Library
+# Components
 
 - [Components](components/components-introduction.md)
 
@@ -20,9 +20,9 @@
   - [Buttons](components/buttons.md)
   - [Cards](components/cards.md)
 
-- [Containers](components/containers-introduction.md)
-  - [Row](components/rows.md)
-  - [Container](components/containers.md)
+- [Containers](containers/containers-introduction.md)
+  - [Rows](containers/rows.md)
+  - [Containers](containers/containers.md)
 
 # Extending Blocks
 
