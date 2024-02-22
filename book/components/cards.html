@@ -77,7 +77,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="../user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../user-guide/deploy-with-docker.html">Deploy with Docker</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="../reference-guide/blocks-markdown.html">Blocks Markdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Components</li><li class="chapter-item expanded "><a href="../components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="../components/badges.html">Badges</a></li><li class="chapter-item expanded "><a href="../components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="../components/cards.html" class="active">Cards</a></li><li class="chapter-item expanded affix "><li class="part-title">Extending Blocks</li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-backend.html">Blocks Backend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/blocks-parser.html">Blocks Parser</a></li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-factory.html">Blocks Factory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/adding-new-components.html">Adding New Components</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contributing</li><li class="chapter-item expanded "><a href="../contributing/standards.html">Standards</a></li><li class="chapter-item expanded "><a href="../contributing/github-repository.html">GitHub Repository</a></li><li class="chapter-item expanded "><a href="../contributing/pull-requests.html">Pull Requests</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="../user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../user-guide/deploy-with-docker.html">Deploy with Docker</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="../reference-guide/blocks-markdown.html">Blocks Markdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Components Library</li><li class="chapter-item expanded "><a href="../components/components-introduction.html">Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="../components/badges.html">Badges</a></li><li class="chapter-item expanded "><a href="../components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="../components/cards.html" class="active">Cards</a></li></ol></li><li class="chapter-item expanded "><a href="../components/containers-introduction.html">Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../components/rows.html">Row</a></li><li class="chapter-item expanded "><a href="../components/containers.html">Container</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extending Blocks</li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-backend.html">Blocks Backend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/blocks-parser.html">Blocks Parser</a></li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-factory.html">Blocks Factory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/adding-new-components.html">Adding New Components</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contributing</li><li class="chapter-item expanded "><a href="../contributing/standards.html">Standards</a></li><li class="chapter-item expanded "><a href="../contributing/github-repository.html">GitHub Repository</a></li><li class="chapter-item expanded "><a href="../contributing/pull-requests.html">Pull Requests</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -139,37 +139,14 @@
                         <h1 id="cards"><a class="header" href="#cards">Cards</a></h1>
 <p>Behold the awe-inspiring power of the card! An unrivaled vessel for your content, the card is a flexible and adaptable container that is sure to capture your audience's attention. With options for customization, you can easily tailor your card to suit your needs to bring forward your vision.</p>
 <h2 id="attributes"><a class="header" href="#attributes">Attributes</a></h2>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>caption</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>image</td>
-<td>A path to an image wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>button</td>
-<td>A caption string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>link</td>
-<td>A path to a markdown file wrapped in double-quotes</td>
-</tr>
-</tbody>
-</table>
-<p>&lt;/br&gt;</p>
+<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
+<tr><td>title</td><td>A content string wrapped in double-quotes</td></tr>
+<tr><td>caption</td><td>A content string wrapped in double-quotes</td></tr>
+<tr><td>image</td><td>A path to an image wrapped in double-quotes</td></tr>
+<tr><td>button</td><td>A caption string wrapped in double-quotes</td></tr>
+<tr><td>link</td><td>A path to a markdown file wrapped in double-quotes</td></tr>
+</tbody></table>
+</div></br>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <pre><code class="language-markdown">[blocks-card]
 title: &quot;A Card&quot;
@@ -179,9 +156,16 @@ button: &quot;Take me there!&quot;
 link: &quot;../welcome.md&quot;
 [/blocks-card]
 </code></pre>
-<p>&lt;/br&gt;</p>
+</br>
 <h3 id="output"><a class="header" href="#output">Output</a></h3>
-<div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">A Card</p><p class="card-text mb-5">Here is a beautiful card to transport you to the Welcome page</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">Take me there!</button></a></div></div></div><p>The card offers a myriad of potential display options that enable you to present your content in distinctive and captivating ways. Whether you choose to stack your cards or utilize the <a href="rows.html">row</a> or <a href="containers.html">container</a> layout components, the possibilities for creative expression are limitless. You have complete freedom to experiment with various layouts to make your content stand out and leave a lasting impression on your audience.</p>
+<p>[blocks-card]
+title: &quot;A Card&quot;
+caption: &quot;Here is a beautiful card to transport you to the Welcome page&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;Take me there!&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]</p>
+<p>The card offers a myriad of potential display options that enable you to present your content in distinctive and captivating ways. Whether you choose to stack your cards or utilize the <a href="rows.html">row</a> or <a href="containers.html">container</a> layout components, the possibilities for creative expression are limitless. You have complete freedom to experiment with various layouts to make your content stand out and leave a lasting impression on your audience.</p>
 <h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
 <pre><code class="language-markdown">[blocks-row]
 [blocks-card]
@@ -214,9 +198,39 @@ link: &quot;../welcome.md&quot;
 [/blocks-card]
 [/blocks-row]
 </code></pre>
-<p>&lt;/br&gt;</p>
+</br>
 <h3 id="output-1"><a class="header" href="#output-1">Output</a></h3>
-<div class="row"><div class="d-flex justify-content-around flex-grow-1 flex-wrap"><div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 1</p><p class="card-text mb-5">I am card 1</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 2</p><p class="card-text mb-5">I am card 2</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 3</p><p class="card-text mb-5">I am card 3 and I have more content than the other cards</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 4</p><p class="card-text mb-5">I am card 4</p><a href="../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div></div></div>
+<p>[blocks-row]
+[blocks-card]
+title: &quot;Card 1&quot;
+caption: &quot;I am card 1&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;See More&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]
+[blocks-card]
+title: &quot;Card 2&quot;
+caption: &quot;I am card 2&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;See More&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]
+[blocks-card]
+title: &quot;Card 3&quot;
+caption: &quot;I am card 3 and I have more content than the other cards&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;See More&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]
+[blocks-card]
+title: &quot;Card 4&quot;
+caption: &quot;I am card 4&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;See More&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]
+[/blocks-row]</p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -224,7 +238,7 @@ link: &quot;../welcome.md&quot;
                             <a rel="prev" href="../components/buttons.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../extending-blocks/blocks-backend.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../components/containers-introduction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -236,13 +250,29 @@ link: &quot;../welcome.md&quot;
                     <a rel="prev" href="../components/buttons.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../extending-blocks/blocks-backend.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../components/containers-introduction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>

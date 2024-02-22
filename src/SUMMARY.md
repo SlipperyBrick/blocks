@@ -11,12 +11,18 @@
 
 - [Blocks Markdown](reference-guide/blocks-markdown.md)
 
-# Components
+# Components Library
 
-- [Alerts](components/alerts.md)
-- [Badges](components/badges.md)
-- [Buttons](components/buttons.md)
-- [Cards](components/cards.md)
+- [Components](components/components-introduction.md)
+
+  - [Alerts](components/alerts.md)
+  - [Badges](components/badges.md)
+  - [Buttons](components/buttons.md)
+  - [Cards](components/cards.md)
+
+- [Containers](components/containers-introduction.md)
+  - [Row](components/rows.md)
+  - [Container](components/containers.md)
 
 # Extending Blocks
 

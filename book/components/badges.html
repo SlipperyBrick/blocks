@@ -77,7 +77,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="../user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../user-guide/deploy-with-docker.html">Deploy with Docker</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="../reference-guide/blocks-markdown.html">Blocks Markdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Components</li><li class="chapter-item expanded "><a href="../components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="../components/badges.html" class="active">Badges</a></li><li class="chapter-item expanded "><a href="../components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="../components/cards.html">Cards</a></li><li class="chapter-item expanded affix "><li class="part-title">Extending Blocks</li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-backend.html">Blocks Backend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/blocks-parser.html">Blocks Parser</a></li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-factory.html">Blocks Factory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/adding-new-components.html">Adding New Components</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contributing</li><li class="chapter-item expanded "><a href="../contributing/standards.html">Standards</a></li><li class="chapter-item expanded "><a href="../contributing/github-repository.html">GitHub Repository</a></li><li class="chapter-item expanded "><a href="../contributing/pull-requests.html">Pull Requests</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="../user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../user-guide/deploy-with-docker.html">Deploy with Docker</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="../reference-guide/blocks-markdown.html">Blocks Markdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Components Library</li><li class="chapter-item expanded "><a href="../components/components-introduction.html">Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="../components/badges.html" class="active">Badges</a></li><li class="chapter-item expanded "><a href="../components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="../components/cards.html">Cards</a></li></ol></li><li class="chapter-item expanded "><a href="../components/containers-introduction.html">Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../components/rows.html">Row</a></li><li class="chapter-item expanded "><a href="../components/containers.html">Container</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extending Blocks</li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-backend.html">Blocks Backend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/blocks-parser.html">Blocks Parser</a></li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-factory.html">Blocks Factory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/adding-new-components.html">Adding New Components</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contributing</li><li class="chapter-item expanded "><a href="../contributing/standards.html">Standards</a></li><li class="chapter-item expanded "><a href="../contributing/github-repository.html">GitHub Repository</a></li><li class="chapter-item expanded "><a href="../contributing/pull-requests.html">Pull Requests</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -139,34 +139,24 @@
                         <h1 id="badges"><a class="header" href="#badges">Badges</a></h1>
 <p>Get ready to elevate your user experience with the powerful and flexible badge headings at your fingertips! Create a seamless and intuitive user experience that keeps your audience engaged and informed.</p>
 <h2 id="attributes"><a class="header" href="#attributes">Attributes</a></h2>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>content</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-</tbody>
-</table>
-<p>&lt;/br&gt;</p>
+<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
+<tr><td>title</td><td>A content string wrapped in double-quotes</td></tr>
+<tr><td>content</td><td>A content string wrapped in double-quotes</td></tr>
+</tbody></table>
+</div></br>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <pre><code class="language-markdown">[blocks-badge]
 title: &quot;A Simple Badge&quot;
 content: &quot;New&quot;
 [/blocks-badge]
 </code></pre>
-<p>&lt;/br&gt;</p>
+</br>
 <h3 id="output"><a class="header" href="#output">Output</a></h3>
-<h1 class="my-4">A Simple Badge<span class="badge badge-primary ml-2">New</span></h1><p>Badges are a great way to add a touch of engagement to your webpage. Highlight new content sections, or draw attention to specific information that you want focus on.</p>
+<p>[blocks-badge]
+title: &quot;A Simple Badge&quot;
+content: &quot;New&quot;
+[/blocks-badge]</p>
+<p>Badges are a great way to add a touch of engagement to your webpage. Highlight new content sections, or draw attention to specific information that you want focus on.</p>
 
                     </main>
 
@@ -194,6 +184,22 @@ content: &quot;New&quot;
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>

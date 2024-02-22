@@ -78,7 +78,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="user-guide/deploy-with-docker.html">Deploy with Docker</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="reference-guide/blocks-markdown.html">Blocks Markdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Components</li><li class="chapter-item expanded "><a href="components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="components/badges.html">Badges</a></li><li class="chapter-item expanded "><a href="components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="components/cards.html">Cards</a></li><li class="chapter-item expanded affix "><li class="part-title">Extending Blocks</li><li class="chapter-item expanded "><a href="extending-blocks/blocks-backend.html">Blocks Backend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="extending-blocks/blocks-parser.html">Blocks Parser</a></li><li class="chapter-item expanded "><a href="extending-blocks/blocks-factory.html">Blocks Factory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="extending-blocks/adding-new-components.html">Adding New Components</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contributing</li><li class="chapter-item expanded "><a href="contributing/standards.html">Standards</a></li><li class="chapter-item expanded "><a href="contributing/github-repository.html">GitHub Repository</a></li><li class="chapter-item expanded "><a href="contributing/pull-requests.html">Pull Requests</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="user-guide/deploy-with-docker.html">Deploy with Docker</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="reference-guide/blocks-markdown.html">Blocks Markdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Components Library</li><li class="chapter-item expanded "><a href="components/components-introduction.html">Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="components/badges.html">Badges</a></li><li class="chapter-item expanded "><a href="components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="components/cards.html">Cards</a></li></ol></li><li class="chapter-item expanded "><a href="components/containers-introduction.html">Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="components/rows.html">Row</a></li><li class="chapter-item expanded "><a href="components/containers.html">Container</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extending Blocks</li><li class="chapter-item expanded "><a href="extending-blocks/blocks-backend.html">Blocks Backend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="extending-blocks/blocks-parser.html">Blocks Parser</a></li><li class="chapter-item expanded "><a href="extending-blocks/blocks-factory.html">Blocks Factory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="extending-blocks/adding-new-components.html">Adding New Components</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contributing</li><li class="chapter-item expanded "><a href="contributing/standards.html">Standards</a></li><li class="chapter-item expanded "><a href="contributing/github-repository.html">GitHub Repository</a></li><li class="chapter-item expanded "><a href="contributing/pull-requests.html">Pull Requests</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -184,27 +184,14 @@ link: &quot;components/cards.md&quot;
 ```
 </code></pre>
 <blockquote></blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="alerts"><a class="header" href="#alerts">Alerts</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="alerts"><a class="header" href="#alerts">Alerts</a></h1>
 <p>Alerts are a versatile tool to can captivate your audience's attention while efficiently delivering essential messages. Whether you want to celebrate achievements or provide critical warnings, alerts empower you to communicate with impact in a sleek and stylish manner.</p>
 <h2 id="attributes"><a class="header" href="#attributes">Attributes</a></h2>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>content</td>
-<td>Enclose the message you wish to display within double quotes</td>
-</tr>
-<tr>
-<td>icon</td>
-<td>Optionally, include a FontAwesome icon within double quotes to enhance visual context.</td>
-</tr>
-</tbody>
-</table>
+<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
+<tr><td>content</td><td>Enclose the message you wish to display within double quotes</td></tr>
+<tr><td>icon</td><td>Optionally, include a FontAwesome icon within double quotes to enhance visual context.</td></tr>
+</tbody></table>
+</div>
 <p>Refer to the <a href="https://fontawesome.com/v4/cheatsheet/">FontAwesome icon cheatsheet</a> for a selection of available icons</p>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <p>Explore an example showcasing a straightfoward alert with both an icon and a message:</p>
@@ -215,71 +202,55 @@ content: &quot;A simple alert&quot;
 </code></pre>
 <h3 id="output"><a class="header" href="#output">Output</a></h3>
 <p>The example above renders as:</p>
-<div class="alert alert-primary my-4 w-100" role="alert"><div class="mr-2 fa fa-info-circle"></div>A simple alert</div><p>The &quot;fa-info-circle&quot; icon from FontAwesome is utilized in this case to denote an informational message.</p>
+<p>[blocks-alert]
+icon: &quot;fa-info-circle&quot;
+content: &quot;A simple alert&quot;
+[/blocks-alert]</p>
+<p>The &quot;fa-info-circle&quot; icon from FontAwesome is utilized in this case to denote an informational message.</p>
 <p>Feel free to experiment with various icons and messages to tailor your alerts to your content's context.</p>
 <p>Remember to consistently use double quotes and maintain proper indentation for polished syntax.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="badges"><a class="header" href="#badges">Badges</a></h1>
 <p>Get ready to elevate your user experience with the powerful and flexible badge headings at your fingertips! Create a seamless and intuitive user experience that keeps your audience engaged and informed.</p>
 <h2 id="attributes-1"><a class="header" href="#attributes-1">Attributes</a></h2>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>content</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-</tbody>
-</table>
-<p>&lt;/br&gt;</p>
+<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
+<tr><td>title</td><td>A content string wrapped in double-quotes</td></tr>
+<tr><td>content</td><td>A content string wrapped in double-quotes</td></tr>
+</tbody></table>
+</div></br>
 <h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
 <pre><code class="language-markdown">[blocks-badge]
 title: &quot;A Simple Badge&quot;
 content: &quot;New&quot;
 [/blocks-badge]
 </code></pre>
-<p>&lt;/br&gt;</p>
+</br>
 <h3 id="output-1"><a class="header" href="#output-1">Output</a></h3>
-<h1 class="my-4">A Simple Badge<span class="badge badge-primary ml-2">New</span></h1><p>Badges are a great way to add a touch of engagement to your webpage. Highlight new content sections, or draw attention to specific information that you want focus on.</p>
+<p>[blocks-badge]
+title: &quot;A Simple Badge&quot;
+content: &quot;New&quot;
+[/blocks-badge]</p>
+<p>Badges are a great way to add a touch of engagement to your webpage. Highlight new content sections, or draw attention to specific information that you want focus on.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="buttons"><a class="header" href="#buttons">Buttons</a></h1>
 <p>Prepare to unleash the power of buttons on your webpage! With their ability to guide users and provide easy access to other areas of content, buttons are an essential tool for creating a seamless and intuitive user experience.</p>
 <h2 id="attributes-2"><a class="header" href="#attributes-2">Attributes</a></h2>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>content</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>link</td>
-<td>A path to a markdown file wrapped in double-quotes</td>
-</tr>
-</tbody>
-</table>
-<p>&lt;/br&gt;</p>
+<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
+<tr><td>content</td><td>A content string wrapped in double-quotes</td></tr>
+<tr><td>link</td><td>A path to a markdown file wrapped in double-quotes</td></tr>
+</tbody></table>
+</div></br>
 <h3 id="example-2"><a class="header" href="#example-2">Example</a></h3>
 <pre><code class="language-markdown">[blocks-button]
 content: &quot;Go Somewhere&quot;
 link: &quot;../welcome.md&quot;
 [/blocks-button]
 </code></pre>
-<p>&lt;/br&gt;</p>
+</br>
 <h3 id="output-2"><a class="header" href="#output-2">Output</a></h3>
-<a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Go Somewhere</button></a><p>&lt;/br&gt;</p>
+<p>[blocks-button]
+content: &quot;Go Somewhere&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-button]</p>
+</br>
 <p>Up to seven buttons can be perfectly aligned by wrapping a <a href="components/rows.html">row</a> component around them.</p>
 <h3 id="example-3"><a class="header" href="#example-3">Example</a></h3>
 <pre><code class="language-markdown">[blocks-row]
@@ -313,42 +284,49 @@ link: &quot;../welcome.md&quot;
 [/blocks-button]
 [/blocks-row]
 </code></pre>
-<p>&lt;/br&gt;</p>
+</br>
 <h3 id="output-3"><a class="header" href="#output-3">Output</a></h3>
-<div class="row"><div class="d-flex justify-content-around flex-grow-1 flex-wrap"><a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 1</button></a> <a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 2</button></a> <a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 3</button></a> <a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 4</button></a> <a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 5</button></a> <a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 6</button></a> <a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap"><button class="btn btn-primary mt-auto align-self-start">Button 7</button></a></div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="cards"><a class="header" href="#cards">Cards</a></h1>
+<p>[blocks-row]
+[blocks-button]
+content: &quot;Button 1&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-button]
+[blocks-button]
+content: &quot;Button 2&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-button]
+[blocks-button]
+content: &quot;Button 3&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-button]
+[blocks-button]
+content: &quot;Button 4&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-button]
+[blocks-button]
+content: &quot;Button 5&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-button]
+[blocks-button]
+content: &quot;Button 6&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-button]
+[blocks-button]
+content: &quot;Button 7&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-button]
+[/blocks-row]</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="cards"><a class="header" href="#cards">Cards</a></h1>
 <p>Behold the awe-inspiring power of the card! An unrivaled vessel for your content, the card is a flexible and adaptable container that is sure to capture your audience's attention. With options for customization, you can easily tailor your card to suit your needs to bring forward your vision.</p>
 <h2 id="attributes-3"><a class="header" href="#attributes-3">Attributes</a></h2>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>caption</td>
-<td>A content string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>image</td>
-<td>A path to an image wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>button</td>
-<td>A caption string wrapped in double-quotes</td>
-</tr>
-<tr>
-<td>link</td>
-<td>A path to a markdown file wrapped in double-quotes</td>
-</tr>
-</tbody>
-</table>
-<p>&lt;/br&gt;</p>
+<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
+<tr><td>title</td><td>A content string wrapped in double-quotes</td></tr>
+<tr><td>caption</td><td>A content string wrapped in double-quotes</td></tr>
+<tr><td>image</td><td>A path to an image wrapped in double-quotes</td></tr>
+<tr><td>button</td><td>A caption string wrapped in double-quotes</td></tr>
+<tr><td>link</td><td>A path to a markdown file wrapped in double-quotes</td></tr>
+</tbody></table>
+</div></br>
 <h3 id="example-4"><a class="header" href="#example-4">Example</a></h3>
 <pre><code class="language-markdown">[blocks-card]
 title: &quot;A Card&quot;
@@ -358,9 +336,16 @@ button: &quot;Take me there!&quot;
 link: &quot;../welcome.md&quot;
 [/blocks-card]
 </code></pre>
-<p>&lt;/br&gt;</p>
+</br>
 <h3 id="output-4"><a class="header" href="#output-4">Output</a></h3>
-<div class="row col-3 my-4"><div class="card h-100"><img src="components/../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">A Card</p><p class="card-text mb-5">Here is a beautiful card to transport you to the Welcome page</p><a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">Take me there!</button></a></div></div></div><p>The card offers a myriad of potential display options that enable you to present your content in distinctive and captivating ways. Whether you choose to stack your cards or utilize the <a href="components/rows.html">row</a> or <a href="components/containers.html">container</a> layout components, the possibilities for creative expression are limitless. You have complete freedom to experiment with various layouts to make your content stand out and leave a lasting impression on your audience.</p>
+<p>[blocks-card]
+title: &quot;A Card&quot;
+caption: &quot;Here is a beautiful card to transport you to the Welcome page&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;Take me there!&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]</p>
+<p>The card offers a myriad of potential display options that enable you to present your content in distinctive and captivating ways. Whether you choose to stack your cards or utilize the <a href="components/rows.html">row</a> or <a href="components/containers.html">container</a> layout components, the possibilities for creative expression are limitless. You have complete freedom to experiment with various layouts to make your content stand out and leave a lasting impression on your audience.</p>
 <h3 id="example-5"><a class="header" href="#example-5">Example</a></h3>
 <pre><code class="language-markdown">[blocks-row]
 [blocks-card]
@@ -393,9 +378,42 @@ link: &quot;../welcome.md&quot;
 [/blocks-card]
 [/blocks-row]
 </code></pre>
-<p>&lt;/br&gt;</p>
+</br>
 <h3 id="output-5"><a class="header" href="#output-5">Output</a></h3>
-<div class="row"><div class="d-flex justify-content-around flex-grow-1 flex-wrap"><div class="row col-3 my-4"><div class="card h-100"><img src="components/../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 1</p><p class="card-text mb-5">I am card 1</p><a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="components/../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 2</p><p class="card-text mb-5">I am card 2</p><a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="components/../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 3</p><p class="card-text mb-5">I am card 3 and I have more content than the other cards</p><a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="components/../assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Card 4</p><p class="card-text mb-5">I am card 4</p><a href="components/../welcome.html" data-href="../welcome.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">See More</button></a></div></div></div></div></div><div style="break-before: page; page-break-before: always;"></div><p>Discuss what this chapter aims to achieve in regards to demonstrating and discussing the backend of the blocks preprocessor, its design, how its used and how it works.</p>
+<p>[blocks-row]
+[blocks-card]
+title: &quot;Card 1&quot;
+caption: &quot;I am card 1&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;See More&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]
+[blocks-card]
+title: &quot;Card 2&quot;
+caption: &quot;I am card 2&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;See More&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]
+[blocks-card]
+title: &quot;Card 3&quot;
+caption: &quot;I am card 3 and I have more content than the other cards&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;See More&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]
+[blocks-card]
+title: &quot;Card 4&quot;
+caption: &quot;I am card 4&quot;
+image: &quot;../assets/blocks-watermark.png&quot;
+button: &quot;See More&quot;
+link: &quot;../welcome.md&quot;
+[/blocks-card]
+[/blocks-row]</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="containers"><a class="header" href="#containers">Containers</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="row"><a class="header" href="#row">Row</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="container"><a class="header" href="#container">Container</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p>Discuss what this chapter aims to achieve in regards to demonstrating and discussing the backend of the blocks preprocessor, its design, how its used and how it works.</p>
 <div style="break-before: page; page-break-before: always;"></div><p>Discuss the design/architecture of the blocks preprocessor.</p>
 <p>Demonstrate in a diagram the set up of the preprocessor in terms of:</p>
 <ul>
@@ -427,6 +445,22 @@ link: &quot;../welcome.md&quot;
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
