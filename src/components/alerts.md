@@ -1,6 +1,6 @@
 # Alerts
 
-Alerts are a versatile tool which can captivate your audience's attention while efficiently delivering essential messages. Whether you want to celebrate achievements or provide critical warnings, alerts empower you to communicate with impact in a sleek and stylish manner.
+Alerts are a versatile tool to can captivate your audience's attention while efficiently delivering essential messages. Whether you want to celebrate achievements or provide critical warnings, alerts empower you to communicate with impact in a sleek and stylish manner.
 
 ## Attributes
 
