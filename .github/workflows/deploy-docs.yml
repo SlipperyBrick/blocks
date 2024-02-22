@@ -1,0 +1,35 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches:
+      - docs
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install mdbook
+        run: |
+          wget https://github.com/rust-lang/mdBook/releases/download/v0.4.12/mdbook-v0.4.12-x86_64-unknown-linux-gnu.tar.gz
+          tar xf mdbook-v0.4.12-x86_64-unknown-linux-gnu.tar.gz
+          sudo mv mdbook /usr/local/bin/
+
+      - name: Build Documentation
+        run: mdbook build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book

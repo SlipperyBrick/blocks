@@ -23,6 +23,7 @@ node_modules
 out
 dist
 /resources
+book
 
 # C extensions
 *.so
