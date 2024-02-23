@@ -78,7 +78,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="../user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../user-guide/deploy-with-docker.html">Deploy with Docker</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="../reference-guide/blocks-markdown.html">Blocks Markdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Components</li><li class="chapter-item expanded "><a href="../components/components-introduction.html" class="active">Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="../components/badges.html">Badges</a></li><li class="chapter-item expanded "><a href="../components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="../components/cards.html">Cards</a></li></ol></li><li class="chapter-item expanded "><a href="../containers/containers-introduction.html">Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../containers/rows.html">Rows</a></li><li class="chapter-item expanded "><a href="../containers/containers.html">Containers</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extending Blocks</li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-backend.html">Blocks Backend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/blocks-parser.html">Blocks Parser</a></li><li class="chapter-item expanded "><a href="../extending-blocks/blocks-factory.html">Blocks Factory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../extending-blocks/adding-new-components.html">Adding New Components</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contributing</li><li class="chapter-item expanded "><a href="../contributing/standards.html">Standards</a></li><li class="chapter-item expanded "><a href="../contributing/github-repository.html">GitHub Repository</a></li><li class="chapter-item expanded "><a href="../contributing/pull-requests.html">Pull Requests</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="../user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../user-guide/deploy-with-docker.html">Deploy with Docker</a></li><li class="chapter-item expanded "><a href="../user-guide/deploy-with-static-files.html">Deploy with Static Files</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="../reference-guide/markdown.html">Markdown Reference</a></li><li class="chapter-item expanded "><a href="../reference-guide/blocks-markdown.html">Blocks Markdown Reference</a></li><li class="chapter-item expanded affix "><li class="part-title">Blocks Component Library</li><li class="chapter-item expanded "><a href="../components/components-introduction.html" class="active">Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="../components/badges.html">Badges</a></li><li class="chapter-item expanded "><a href="../components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="../components/cards.html">Cards</a></li></ol></li><li class="chapter-item expanded "><a href="../containers/containers-introduction.html">Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../containers/rows.html">Rows</a></li><li class="chapter-item expanded "><a href="../containers/containers.html">Containers</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Examples</li><li class="chapter-item expanded "><a href="../examples/starlight-festival.html">Starlight Festival</a></li><li class="chapter-item expanded "><a href="../examples/innovate-conference.html">Innovate Conference</a></li><li class="chapter-item expanded "><a href="../examples/aurora-smartglasses.html">Aurora Smartglasses</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -164,22 +164,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>

@@ -79,7 +79,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="user-guide/deploy-with-docker.html">Deploy with Docker</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="reference-guide/blocks-markdown.html">Blocks Markdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Components</li><li class="chapter-item expanded "><a href="components/components-introduction.html">Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="components/badges.html">Badges</a></li><li class="chapter-item expanded "><a href="components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="components/cards.html">Cards</a></li></ol></li><li class="chapter-item expanded "><a href="containers/containers-introduction.html">Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/rows.html">Rows</a></li><li class="chapter-item expanded "><a href="containers/containers.html">Containers</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extending Blocks</li><li class="chapter-item expanded "><a href="extending-blocks/blocks-backend.html">Blocks Backend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="extending-blocks/blocks-parser.html">Blocks Parser</a></li><li class="chapter-item expanded "><a href="extending-blocks/blocks-factory.html">Blocks Factory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="extending-blocks/adding-new-components.html">Adding New Components</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contributing</li><li class="chapter-item expanded "><a href="contributing/standards.html">Standards</a></li><li class="chapter-item expanded "><a href="contributing/github-repository.html">GitHub Repository</a></li><li class="chapter-item expanded "><a href="contributing/pull-requests.html">Pull Requests</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="user-guide/installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="user-guide/deploy-with-docker.html">Deploy with Docker</a></li><li class="chapter-item expanded "><a href="user-guide/deploy-with-static-files.html">Deploy with Static Files</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Reference Guide</li><li class="chapter-item expanded "><a href="reference-guide/markdown.html">Markdown Reference</a></li><li class="chapter-item expanded "><a href="reference-guide/blocks-markdown.html">Blocks Markdown Reference</a></li><li class="chapter-item expanded affix "><li class="part-title">Blocks Component Library</li><li class="chapter-item expanded "><a href="components/components-introduction.html">Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="components/alerts.html">Alerts</a></li><li class="chapter-item expanded "><a href="components/badges.html">Badges</a></li><li class="chapter-item expanded "><a href="components/buttons.html">Buttons</a></li><li class="chapter-item expanded "><a href="components/cards.html">Cards</a></li></ol></li><li class="chapter-item expanded "><a href="containers/containers-introduction.html">Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/rows.html">Rows</a></li><li class="chapter-item expanded "><a href="containers/containers.html">Containers</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Examples</li><li class="chapter-item expanded "><a href="examples/starlight-festival.html">Starlight Festival</a></li><li class="chapter-item expanded "><a href="examples/innovate-conference.html">Innovate Conference</a></li><li class="chapter-item expanded "><a href="examples/aurora-smartglasses.html">Aurora Smartglasses</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -138,14 +138,14 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p><img src="./assets/blocks-logo.png" alt="Blocks logo"></p>
-<h1 id="welcome"><a class="header" href="#welcome">Welcome</a></h1>
-<div class="alert alert-primary my-4 w-100" role="alert"><div class="mr-2 fa fa-info-circle"></div>Blocks is in constant development, contribute @ <a href="https://github.com/SlipperyBrick/Blocks">https://github.com/SlipperyBrick/Blocks</a></div><p>Blocks is a plugin for mdbook which preprocesses <a href="reference-guide/blocks-markdown.html">Blocks custom markdown syntax</a> into beautiful Bootstrap components.</p>
-<p>Elements which are created with Blocks are constructed into Bootstrap components that inherit the default style of your enabled mdbook theme.</p>
-<p>Whether you are using mdbook for creating a blogging site, technical documentation, a personal portfolio, or even a complete website solution, Blocks gives you the ability to continue writing your book pages in markdown whilst adding modern looking components straight from the Bootstrap framework.</p>
+                        <h1 id="welcome"><a class="header" href="#welcome">Welcome</a></h1>
+<p>Blocks is a preprocessor for mdBook which transforms <a href="reference-guide/blocks-markdown.html">Blocks markdown</a> into beautiful Bootstrap components.</p>
+<div class="alert alert-primary my-4 w-100" role="alert"><div class="mr-2 fa fa-info-circle"></div>Blocks is in constant development, contribute @ <a href="https://github.com/SlipperyBrick/Blocks">https://github.com/SlipperyBrick/Blocks</a></div><p>Elements which are created with Blocks are constructed into Bootstrap components that inherit the default style of your enabled mdBook theme.</p>
+<p>Whether you are using mdBook for creating a blogging site, technical documentation, a personal portfolio, or even a complete website solution, Blocks gives you the ability to continue writing your book pages in markdown whilst adding modern looking components straight from the Bootstrap framework.</p>
+<p>Check the <a href="examples/starlight-festival.html">examples</a> to see what is possible with Blocks, and also visit the <a href="components/components-introduction.html">Blocks component library</a> for a list of supported components.</p>
 <div class="row"><div class="d-flex justify-content-around flex-grow-1 flex-wrap"><div class="row col-3 my-4"><div class="card h-100"><img src="./assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Hi!</p><p class="card-text mb-5">Keep your content looking fresh.</p><a href="components/alerts.html" data-href="components/alerts.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">Alerts</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="./assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Welcome!</p><p class="card-text mb-5">With modern Bootstrap components.</p><a href="components/badges.html" data-href="components/badges.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">Badges</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="./assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">To ...</p><p class="card-text mb-5">That you can write in markdown.</p><a href="components/buttons.html" data-href="components/buttons.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">Buttons</button></a></div></div></div> <div class="row col-3 my-4"><div class="card h-100"><img src="./assets/blocks-watermark.png" class="card-img-top" alt="..."><div class="card-body d-flex flex-column flex-grow-1"><p class="card-title">Blocks!</p><p class="card-text mb-5">Using the power of Blocks.</p><a href="components/cards.html" data-href="components/cards.md" class="btn-wrap mt-auto align-self-start"><button class="btn btn-primary">Cards</button></a></div></div></div></div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="deploy-with-docker"><a class="header" href="#deploy-with-docker">Deploy with Docker</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="blocks-markdown"><a class="header" href="#blocks-markdown">Blocks Markdown</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="blocks-markdown"><a class="header" href="#blocks-markdown">Blocks Markdown</a></h1>
 <p>Discuss the syntax of blocks markdown. Demo how a single component works ...</p>
 <pre><code class="language-blocks-card">title: &quot;Hi!&quot;
 caption: &quot;Keep your content looking fresh.&quot;
@@ -448,24 +448,7 @@ content: &quot;A simple alert&quot;
 <h3 id="output-7"><a class="header" href="#output-7">Output</a></h3>
 <pre><code class="language-blocks-alert">content: &quot;A simple alert&quot;
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><p>Discuss what this chapter aims to achieve in regards to demonstrating and discussing the backend of the blocks preprocessor, its design, how its used and how it works.</p>
-<div style="break-before: page; page-break-before: always;"></div><p>Discuss the design/architecture of the blocks preprocessor.</p>
-<p>Demonstrate in a diagram the set up of the preprocessor in terms of:</p>
-<ul>
-<li>blocks_preprocessor.py &lt;- where the parser is created and the parse function is invoked</li>
-<li>blocks_parser.py &lt;- the class blueprint of the blocks parser, this calls the methods which do the &quot;work&quot; of parsing the blocks markdown/book</li>
-<li>blocks_factory.py &lt;- the factory design pattern which polymorphically selects the correct component class</li>
-<li>blocks_components.py &lt;- class implementations of each component which all MUST implement their own &quot;create_component()&quot; method</li>
-<li>blocks_utilities.py &lt;- utility/helper functions which are used by both the parser class, and component classes</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><p>Give the reader a brief introduction to design patterns, discuss the factory design pattern and why it was used to implement components for the blocks preprocessor.</p>
-<div style="break-before: page; page-break-before: always;"></div><p>Go through the process of adding a new component, link the &quot;Standards&quot; page from the &quot;Contributing&quot; section to notify the reader about the markdown standards that MUST be adhered to when adding new components.</p>
-<p>Demonstrate the simplicity of the blocks factory and how adding a new component in &quot;blocks_factory.py&quot; can be done and how its implementation can be coded in &quot;blocks_components.py&quot; (show that each new component class MUST implement its own version of &quot;create_component()&quot;)</p>
-<div style="break-before: page; page-break-before: always;"></div><p>Discuss what the markdown standards of Blocks are.</p>
-<p>Cover how new components must be designed to adhere to the markdown usage covered in the &quot;Blocks Markdown&quot; chapter</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="github-repository"><a class="header" href="#github-repository">GitHub Repository</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="pull-requests"><a class="header" href="#pull-requests">Pull Requests</a></h1>
-
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -480,22 +463,6 @@ content: &quot;A simple alert&quot;
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>

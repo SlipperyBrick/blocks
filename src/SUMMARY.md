@@ -6,12 +6,14 @@
 
 - [Installation](user-guide/installation.md)
   - [Deploy with Docker](user-guide/deploy-with-docker.md)
+  - [Deploy with Static Files](user-guide/deploy-with-static-files.md)
 
 # Reference Guide
 
-- [Blocks Markdown](reference-guide/blocks-markdown.md)
+- [Markdown Reference](reference-guide/markdown.md)
+- [Blocks Markdown Reference](reference-guide/blocks-markdown.md)
 
-# Components
+# Blocks Component Library
 
 - [Components](components/components-introduction.md)
 
@@ -24,15 +26,8 @@
   - [Rows](containers/rows.md)
   - [Containers](containers/containers.md)
 
-# Extending Blocks
+# Examples
 
-- [Blocks Backend](extending-blocks/blocks-backend.md)
-  - [Blocks Parser](extending-blocks/blocks-parser.md)
-  - [Blocks Factory](extending-blocks/blocks-factory.md)
-    - [Adding New Components](extending-blocks/adding-new-components.md)
-
-# Contributing
-
-- [Standards](contributing/standards.md)
-- [GitHub Repository](contributing/github-repository.md)
-- [Pull Requests](contributing/pull-requests.md)
+- [Starlight Festival](examples/starlight-festival.md)
+- [Innovate Conference](examples/innovate-conference.md)
+- [Aurora Smartglasses](examples/aurora-smartglasses.md)
