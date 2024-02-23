@@ -8,6 +8,6 @@ src = "src"
 command = "node node_modules/blocks-preprocessor/dist/blocks.js"
 
 [output.html]
-additional-css = ["node_modules/blocks-preprocessor/dist/mdbook-blocks/resources/bootstrap/scss/bootstrap.css", "node_modules/blocks-preprocessor/dist/mdbook-blocks/resources/blocks/scss/blocks.css"]
+additional-css = ["node_modules/blocks-preprocessor/dist/mdbook-blocks/resources/bootstrap/scss/bootstrap.css", "node_modules/blocks-preprocessor/dist/mdbook-blocks/resources/blocks/scss/blocks.css", "theme/docs.css"]
 additional-js = ["node_modules/blocks-preprocessor/dist/mdbook-blocks/resources/bootstrap/js/bootstrap.js"]
 no-section-label = true
