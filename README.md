@@ -64,7 +64,7 @@ Option 2: Cargo Installation (requires Rust)
 ### Step 3: Setup your mdbook Project
 
 1. **Initialize npm Project:** Navigate to your project root and execute `npm init`.
-2. **Install Blocks:** Run `npm install blocks-preprocessor`.
+2. **Install Blocks:** Run `npm install blocks-preprocessor@latest`.
 
 ### Step 4: Configure mdbook for Blocks
 
