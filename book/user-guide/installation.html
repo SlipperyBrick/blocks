@@ -138,7 +138,46 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
-<p>Using npm</p>
+<p>Blocks is built using TypeScript and has weekly updates via npm. You can find the most recent update of the Blocks preprocessor <a href="https://www.npmjs.com/package/blocks-preprocessor">here</a>, it is recommend to use the <code>@latest</code> tag.</p>
+<h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h2>
+<p>There are a two dependencies that you are required to install in order to use mdBook and the Blocks preprocessor. Below are the steps you should follow if you <strong>do not</strong> have these dependencies installed.</p>
+<h3 id="step-1-install-nodejs"><a class="header" href="#step-1-install-nodejs">Step 1: Install NodeJS</a></h3>
+<ul>
+<li><strong>Windows and Mac:</strong> Download from the <a href="https://nodejs.org/en">NodeJS official website</a>, we recommend opting for the LTS version.</li>
+<li><strong>Linux:</strong> Use nvm installation to manage multiple NodeJS versions easily. See nvm <a href="https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/">installation guide</a>.</li>
+</ul>
+<h3 id="step-2-install-mdbook-cli"><a class="header" href="#step-2-install-mdbook-cli">Step 2: Install mdBook CLI</a></h3>
+<p>Option 1: GitHub Binaries</p>
+<ul>
+<li>Go to <a href="https://github.com/rust-lang/mdBook/releases">mdBook Releases</a> on GitHub.</li>
+<li>Download the latest release for your OS.</li>
+<li>Extract the binary to a location and add to your PATH.</li>
+</ul>
+<p>Option 2: Cargo Installation (requires Rust)</p>
+<ul>
+<li>Install Rust and cargo from the <a href="https://www.rust-lang.org/">official Rust site</a>.</li>
+<li>Run <code>cargo install mdBook</code> in the terminal.</li>
+</ul>
+<h3 id="step-3-setup-your-mdbook-project"><a class="header" href="#step-3-setup-your-mdbook-project">Step 3: Setup your mdBook Project</a></h3>
+<ol>
+<li><strong>Initialize npm Project:</strong> Navigate to your project root and execute <code>npm init</code> and follow the instructions.</li>
+<li><strong>Install Blocks:</strong> Run <code>npm install blocks-preprocessor@latest</code> to get the latest version of the Blocks preprocessor.</li>
+</ol>
+<h3 id="step-4-configure-mdbook-for-blocks"><a class="header" href="#step-4-configure-mdbook-for-blocks">Step 4: Configure mdBook for Blocks</a></h3>
+<ol>
+<li><strong>Initialize mdBook project:</strong> Run <code>mdBook init</code> and follow the instructions.</li>
+<li>Edit your <code>book.toml</code> to include the Blocks preprocessor and Bootstrap resources:</li>
+</ol>
+<pre><code class="language-toml">[preprocessor.blocks]
+command = &quot;node node_modules/blocks-preprocessor/dist/blocks.js&quot;
+[output.html]
+additional-css = [&quot;node_modules/blocks-preprocessor/dist/mdBook-blocks/resources/bootstrap/scss/bootstrap.css&quot;, &quot;node_modules/blocks-preprocessor/dist/mdBook-blocks/resources/blocks/scss/blocks.css&quot;]
+additional-js = [&quot;node_modules/blocks-preprocessor/dist/mdBook-blocks/resources/bootstrap/js/bootstrap.js&quot;]
+</code></pre>
+<h3 id="step-5-begin-using-blocks"><a class="header" href="#step-5-begin-using-blocks">Step 5: Begin Using Blocks</a></h3>
+<p>With your environment setup, you can start incorporating Bootstrap components into your mdBook content using the Blocks' markdown syntax.</p>
+<h2 id="support"><a class="header" href="#support">Support</a></h2>
+<p>If you require extra support to install the required dependencies please raise an issue <a href="https://github.com/SlipperyBrick/Blocks/issues">here</a> and use the &quot;help wanted&quot; label.</p>
 
                     </main>
 
