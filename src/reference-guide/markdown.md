@@ -4,50 +4,42 @@ Markdown is a lightweight markup language designed to format text on the web qui
 
 For a more comprehensive guide on Markdown visit [here](https://www.markdownguide.org/basic-syntax/).
 
-## Getting Started
+# Getting Started
 
 Markdown allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to structured HTML. Below are the steps to start writing Markdown.
 
-### Text Formats
+## Text Formats
 
 Text in Markdown can be easily formatted to improve the readability and high important sections.
 
 - **Bold:** To make text bold, wrap it with two asterisks
 
-```markdown
-**This text will be bold**
-```
+> **This text will be bold**
 
 - **Italic:** Italicize text by wrapping text with a single asterisk
 
-```markdown
-_This text will be italicize_
-```
+> _This text will be italicize_
 
 - **Strikethrough:** To strikethrough text use two tildes
 
-```markdown
-~~Strikethrough text using tildes~~
-```
+> ~~Strikethrough text using tildes~~
 
-### Headings
+## Headings
 
 Headings in Markdown range from 1-6 and are created using the hash or pound symbol `#`
 
-```markdown
-# H1 Heading
+> # H1 Heading
+>
+> ## H2 Heading
+>
+> ### H3 Heading
+>
+> #### H4 Heading
+>
+> ##### H5 Heading
+>
+> ###### H6 Heading
 
-## H2 Heading
-
-### H3 Heading
-
-#### H4 Heading
-
-##### H5 Heading
-
-###### H6 Heading
-```
-
-### Lists
+## Lists
 
 You can organize content by using lists which can be ordered or unordered.

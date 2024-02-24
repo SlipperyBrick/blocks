@@ -31,7 +31,7 @@ link: "components/cards.md"
 
 Components are specified using `tags` for the Bootstrap element and `attributes` for the component's content and settings. Blocks also supports standard markdown within these attributes for enriched text capabilities.
 
-For a detailed list of available components, see the [Blocks Component Library]().
+For a detailed list of available components, see the [Blocks Component Library](https://slipperybrick.github.io/Blocks/components/components-introduction.html).
 
 ## Visual Studio Code Extension
 

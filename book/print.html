@@ -147,13 +147,11 @@
 <p>Blocks is built using TypeScript and has weekly updates via npm. You can find the most recent update of the Blocks preprocessor <a href="https://www.npmjs.com/package/blocks-preprocessor">here</a>, it is recommend to use the <code>@latest</code> tag.</p>
 <h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h2>
 <p>There are a two dependencies that you are required to install in order to use mdBook and the Blocks preprocessor. Below are the steps you should follow if you <strong>do not</strong> have these dependencies installed.</p>
-<h3 id="step-1-install-nodejs"><a class="header" href="#step-1-install-nodejs">Step 1: Install NodeJS</a></h3>
-<ul>
+<h1 class="my-4">Step 1<span class="badge badge-primary ml-2">Install NodeJS</span></h1><ul>
 <li><strong>Windows and Mac:</strong> Download from the <a href="https://nodejs.org/en">NodeJS official website</a>, we recommend opting for the LTS version.</li>
 <li><strong>Linux:</strong> Use nvm installation to manage multiple NodeJS versions easily. See nvm <a href="https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/">installation guide</a>.</li>
 </ul>
-<h3 id="step-2-install-mdbook-cli"><a class="header" href="#step-2-install-mdbook-cli">Step 2: Install mdBook CLI</a></h3>
-<p>Option 1: GitHub Binaries</p>
+<h1 class="my-4">Step 2<span class="badge badge-primary ml-2">Install mdBook CLI</span></h1><p>Option 1: GitHub Binaries</p>
 <ul>
 <li>Go to <a href="https://github.com/rust-lang/mdBook/releases">mdBook Releases</a> on GitHub.</li>
 <li>Download the latest release for your OS.</li>
@@ -164,13 +162,11 @@
 <li>Install Rust and cargo from the <a href="https://www.rust-lang.org/">official Rust site</a>.</li>
 <li>Run <code>cargo install mdBook</code> in the terminal.</li>
 </ul>
-<h3 id="step-3-setup-your-mdbook-project"><a class="header" href="#step-3-setup-your-mdbook-project">Step 3: Setup your mdBook Project</a></h3>
-<ol>
+<h1 class="my-4">Step 3<span class="badge badge-primary ml-2">Setup your mdBook Project</span></h1><ol>
 <li><strong>Initialize npm Project:</strong> Navigate to your project root and execute <code>npm init</code> and follow the instructions.</li>
 <li><strong>Install Blocks:</strong> Run <code>npm install blocks-preprocessor@latest</code> to get the latest version of the Blocks preprocessor.</li>
 </ol>
-<h3 id="step-4-configure-mdbook-for-blocks"><a class="header" href="#step-4-configure-mdbook-for-blocks">Step 4: Configure mdBook for Blocks</a></h3>
-<ol>
+<h1 class="my-4">Step 4<span class="badge badge-primary ml-2">Configure mdBook for Blocks</span></h1><ol>
 <li><strong>Initialize mdBook project:</strong> Run <code>mdBook init</code> and follow the instructions.</li>
 <li>Edit your <code>book.toml</code> to include the Blocks preprocessor and Bootstrap resources:</li>
 </ol>
@@ -180,43 +176,46 @@ command = &quot;node node_modules/blocks-preprocessor/dist/blocks.js&quot;
 additional-css = [&quot;node_modules/blocks-preprocessor/dist/mdBook-blocks/resources/bootstrap/scss/bootstrap.css&quot;, &quot;node_modules/blocks-preprocessor/dist/mdBook-blocks/resources/blocks/scss/blocks.css&quot;]
 additional-js = [&quot;node_modules/blocks-preprocessor/dist/mdBook-blocks/resources/bootstrap/js/bootstrap.js&quot;]
 </code></pre>
-<h3 id="step-5-begin-using-blocks"><a class="header" href="#step-5-begin-using-blocks">Step 5: Begin Using Blocks</a></h3>
-<p>With your environment setup, you can start incorporating Bootstrap components into your mdBook content using the Blocks' markdown syntax.</p>
-<h2 id="support"><a class="header" href="#support">Support</a></h2>
+<h1 class="my-4">Step 4<span class="badge badge-primary ml-2">Begin Using Blocks</span></h1><p>With your environment setup, you can start incorporating Bootstrap components into your mdBook content using the Blocks' markdown syntax.</p>
+<h1 id="support"><a class="header" href="#support">Support</a></h1>
 <p>If you require extra support to install the required dependencies please raise an issue <a href="https://github.com/SlipperyBrick/Blocks/issues">here</a> and use the &quot;help wanted&quot; label.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="deploy-with-docker"><a class="header" href="#deploy-with-docker">Deploy with Docker</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="markdown-syntax-guide"><a class="header" href="#markdown-syntax-guide">Markdown Syntax Guide</a></h1>
 <p>Markdown is a lightweight markup language designed to format text on the web quickly. This guide will walk you through the basics of Markdown, enabling you to create formatted text for you mdBook projects.</p>
 <p>For a more comprehensive guide on Markdown visit <a href="https://www.markdownguide.org/basic-syntax/">here</a>.</p>
-<h2 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h2>
+<h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
 <p>Markdown allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to structured HTML. Below are the steps to start writing Markdown.</p>
-<h3 id="text-formats"><a class="header" href="#text-formats">Text Formats</a></h3>
+<h2 id="text-formats"><a class="header" href="#text-formats">Text Formats</a></h2>
 <p>Text in Markdown can be easily formatted to improve the readability and high important sections.</p>
 <ul>
 <li><strong>Bold:</strong> To make text bold, wrap it with two asterisks</li>
 </ul>
-<pre><code class="language-markdown">**This text will be bold**
-</code></pre>
+<blockquote>
+<p><strong>This text will be bold</strong></p>
+</blockquote>
 <ul>
 <li><strong>Italic:</strong> Italicize text by wrapping text with a single asterisk</li>
 </ul>
-<pre><code class="language-markdown">_This text will be italicize_
-</code></pre>
+<blockquote>
+<p><em>This text will be italicize</em></p>
+</blockquote>
 <ul>
 <li><strong>Strikethrough:</strong> To strikethrough text use two tildes</li>
 </ul>
-<pre><code class="language-markdown">~~Strikethrough text using tildes~~
-</code></pre>
-<h3 id="headings"><a class="header" href="#headings">Headings</a></h3>
+<blockquote>
+<p><s>Strikethrough text using tildes</s></p>
+</blockquote>
+<h2 id="headings"><a class="header" href="#headings">Headings</a></h2>
 <p>Headings in Markdown range from 1-6 and are created using the hash or pound symbol <code>#</code></p>
-<pre><code class="language-markdown"># H1 Heading
+<blockquote>
+<h1 id="h1-heading"><a class="header" href="#h1-heading">H1 Heading</a></h1>
 <h2 id="h2-heading"><a class="header" href="#h2-heading">H2 Heading</a></h2>
 <h3 id="h3-heading"><a class="header" href="#h3-heading">H3 Heading</a></h3>
 <h4 id="h4-heading"><a class="header" href="#h4-heading">H4 Heading</a></h4>
 <h5 id="h5-heading"><a class="header" href="#h5-heading">H5 Heading</a></h5>
 <h6 id="h6-heading"><a class="header" href="#h6-heading">H6 Heading</a></h6>
-<p></code></pre></p>
-<h3 id="lists"><a class="header" href="#lists">Lists</a></h3>
+</blockquote>
+<h2 id="lists"><a class="header" href="#lists">Lists</a></h2>
 <p>You can organize content by using lists which can be ordered or unordered.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="blocks-markdown"><a class="header" href="#blocks-markdown">Blocks Markdown</a></h1>
 <p>Discuss the syntax of blocks markdown. Demo how a single component works ...</p>
