@@ -87,4 +87,4 @@ With your environment setup, you can start incorporating Bootstrap components in
 ## Useful Resources:
 
 - [mdBook documentation](https://rust-lang.github.io/mdBook/index.html)
-- [Blocks documentation](https://slipperybrick.github.io/Blocks/welcome.html)
+- [Blocks documentation](https://slipperybrick.github.io/blocks/welcome.html)
